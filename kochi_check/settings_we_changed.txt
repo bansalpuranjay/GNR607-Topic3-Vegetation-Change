@@ -1,0 +1,22 @@
+Kochi (Kakkanad and Infopark area), the only lines we changed in the code
+
+download.py
+BOX = (642435, 1102365, 654585, 1111275)
+LONLAT = [76.30, 9.97, 76.41, 10.05]
+IITB = (76.36, 10.01)
+AIRPORT = (650055, 1120095, 656685, 1125675)
+PATH, ROW = "144", "053"
+TILE = "N09E075"
+UTM = "EPSG:32643"
+SITES = {}
+SUNRISE, SUNSET = 6.75, 18.33
+
+analysis.py
+BASE = 2023
+VIHAR = (slice(None), slice(None))
+FOREST = (slice(None), slice(None))
+ZOOM = (slice(None), slice(None))
+IITB = (76.36, 10.01)
+UTM = "EPSG:32643"
+
+Then: download.py, analysis.py, download.py photos, labelling in the app, analysis.py again.

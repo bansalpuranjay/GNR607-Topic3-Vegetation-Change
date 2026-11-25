@@ -1,0 +1,11 @@
+site,lat,lon,our_year_of_loss,area_ha,photo_before,photo_after,what_the_photos_show,confirmed
+Loss patch 1,9.99005,76.37562,2020,46.8,2018-12-15,2020-04-10,Trees in Dec 2010; cleared to bare soil by 10 Apr 2020; low scrub and tracks by Dec 2025.,yes
+Loss patch 2,10.00051,76.36412,2025,29.2,2023-01-30,2025-12-26,"Wetland, fields and trees in 2010; part already bare in Jan 2023; roads, tanks and buildings over most of it by Dec 2025.",yes
+Loss patch 3,9.99382,76.38649,2023,10.4,2021-12-17,2023-01-30,Trees up to Dec 2021; a road and buildings cut through them by 30 Jan 2023; more buildings by 2025.,yes
+Loss patch 4,10.04114,76.36192,2026,10.0,2010-12-13,2024-02-17,"Trees, grass and houses in 2010; the north part already cleared by Feb 2024, more cleared by Dec 2025. The loss is real but part of it started before 2026.",partly
+Loss patch 5,10.04909,76.34962,2025,9.3,2023-01-30,2025-12-26,Grass with scattered trees up to Jan 2023; levelled bare soil for construction by Dec 2025.,yes
+Loss patch 6,9.99319,76.36909,2025,7.6,2023-01-30,2025-12-26,Trees and grass in 2010; part bare in Jan 2023; buildings and tanks by Dec 2025.,yes
+Loss patch 7,10.0121,76.37214,2016,6.0,2010-12-13,2016-02-26,Trees in 2010; bare construction ground by Feb 2016; high-rise buildings by 2025.,yes
+Loss patch 8,9.99062,76.38536,2022,5.5,2020-04-10,2023-01-30,Trees up to Apr 2020; cleared with a new strip of road by Jan 2023; buildings by Dec 2025.,yes
+Loss patch 9,10.01411,76.35831,2016,4.4,2010-12-13,2016-03-03,Trees in 2010; partly cleared with a building by Mar 2016; large buildings by 2025.,yes
+Loss patch 10,9.9712,76.40149,2025,4.0,2023-01-30,2025-12-26,Trees up to Jan 2023; two large white-roofed buildings and bare ground by Dec 2025.,yes

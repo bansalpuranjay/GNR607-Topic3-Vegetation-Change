@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>GNR 607 Topic 3 study area</name>
+  <Placemark>
+    <name>Study box (Landsat crop, 390 x 300 pixels)</name>
+    <Style><LineStyle><color>ff00ffff</color><width>3</width></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+    <Polygon><outerBoundaryIs><LinearRing><coordinates>72.859887,19.098702,0 72.971043,19.099961,0 72.970049,19.181247,0 72.858838,19.179983,0 72.859887,19.098702,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+    <name>IIT Bombay</name>
+    <Point><coordinates>72.9133,19.1334,0</coordinates></Point>
+  </Placemark>
+</Document>
+</kml>

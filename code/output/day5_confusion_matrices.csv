@@ -1,0 +1,13 @@
+comparison,row,reference: vegetation,reference: none
+"WorldCover 2020 vs our January 2020 map, all pixels",our map: vegetation,46912,1520
+"WorldCover 2020 vs our January 2020 map, all pixels",our map: none,10440,36949
+"WorldCover 2020 vs our January 2020 map, away from class edges",our map: vegetation,32185,3
+"WorldCover 2020 vs our January 2020 map, away from class edges",our map: none,386,12973
+"WorldCover 2021 vs our January 2021 map, all pixels",our map: vegetation,43904,1040
+"WorldCover 2021 vs our January 2021 map, all pixels",our map: none,16759,34703
+"WorldCover 2021 vs our January 2021 map, away from class edges",our map: vegetation,32640,0
+"WorldCover 2021 vs our January 2021 map, away from class edges",our map: none,3162,11251
+Reference points 2014,our map: vegetation,41,5
+Reference points 2014,our map: none,8,37
+Reference points 2026,our map: vegetation,46,1
+Reference points 2026,our map: none,4,44

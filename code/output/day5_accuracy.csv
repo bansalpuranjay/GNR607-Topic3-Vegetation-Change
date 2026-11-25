@@ -1,0 +1,9 @@
+comparison,pixels_or_points,overall_pct,producer_vegetation_pct,producer_none_pct,user_vegetation_pct,user_none_pct,kappa
+"WorldCover 2020 vs our January 2020 map, all pixels",95821,87.5,81.8,96.0,96.9,78.0,0.75
+"WorldCover 2020 vs our January 2020 map, away from class edges",45547,99.1,98.8,100.0,100.0,97.1,0.979
+"WorldCover 2021 vs our January 2021 map, all pixels",96406,81.5,72.4,97.1,97.7,67.4,0.637
+"WorldCover 2021 vs our January 2021 map, away from class edges",47053,93.3,91.2,100.0,100.0,78.1,0.832
+"Reference points 2014, counts",91,85.7,83.7,88.1,89.1,82.2,0.714
+"Reference points 2014, weighted by map area",91,85.4,80.6,90.1,89.1,82.2,0.707
+"Reference points 2026, counts",95,94.7,92.0,97.8,97.9,91.7,0.895
+"Reference points 2026, weighted by map area",95,94.8,92.4,97.6,97.9,91.7,0.896

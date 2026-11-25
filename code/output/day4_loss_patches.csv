@@ -1,0 +1,48 @@
+rank,pixels,area_ha,year_of_loss,certain,lat,lon,km_from_iit_bombay,direction,worldcover_2020,ndvi_before,ndvi_after,ndbi_before,ndbi_after,replaced_by
+1,85,7.6,2026,not yet,19.16256,72.92694,3.5,NE,Tree cover,0.53,0.27,-0.154,-0.033,built-up or bare
+2,70,6.3,2025,not yet,19.12831,72.93891,2.8,E,Tree cover,0.6,0.3,-0.231,-0.031,built-up or bare
+3,54,4.9,2015,not yet,19.17134,72.88772,5.0,NW,Cropland,0.47,0.33,0.0,0.078,built-up or bare
+4,53,4.8,2024,yes,19.12673,72.93095,2.0,E,Tree cover,0.61,0.31,-0.239,-0.073,still partly green
+5,47,4.2,2024,yes,19.17958,72.96301,7.3,NE,Tree cover,0.53,0.27,-0.154,-0.043,still partly green
+6,47,4.2,2023,yes,19.13722,72.90401,1.1,NW,Tree cover,0.52,0.31,-0.128,-0.056,still partly green
+7,37,3.3,2019,yes,19.13142,72.87973,3.5,W,Tree cover,0.6,0.32,-0.223,-0.051,still partly green
+8,32,2.9,2018,yes,19.13242,72.88197,3.3,W,Cropland,0.64,0.2,-0.199,0.024,built-up or bare
+9,30,2.7,2016,yes,19.17295,72.93845,5.1,NE,Built-up,0.53,0.26,-0.172,-0.067,dark (shadow?)
+10,27,2.4,2026,not yet,19.17952,72.96034,7.1,NE,Tree cover,0.49,0.36,-0.17,-0.095,still partly green
+11,27,2.4,2024,yes,19.16285,72.96044,5.9,NE,Tree cover,0.49,0.22,-0.148,-0.016,built-up or bare
+12,27,2.4,2026,not yet,19.12225,72.95716,4.8,E,Cropland,0.51,0.31,-0.139,-0.023,built-up or bare
+13,26,2.3,2016,yes,19.16766,72.93532,4.4,NE,Tree cover,0.46,0.31,-0.126,-0.076,still partly green
+14,23,2.1,2022,yes,19.16965,72.93896,4.8,NE,Tree cover,0.46,0.24,-0.131,-0.03,built-up or bare
+15,22,2.0,2026,not yet,19.12461,72.9582,4.8,E,Mangroves,0.63,0.39,-0.352,-0.151,dark (shadow?)
+16,21,1.9,2015,not yet,19.10647,72.87345,5.1,SW,Bare / sparse,0.52,0.24,-0.178,-0.011,built-up or bare
+17,18,1.6,2026,not yet,19.12739,72.95631,4.6,E,Mangroves,0.51,0.35,-0.181,-0.083,still partly green
+18,18,1.6,2026,not yet,19.10454,72.86879,5.7,SW,Tree cover,0.47,0.31,-0.161,-0.02,built-up or bare
+19,17,1.5,2026,not yet,19.12297,72.9464,3.7,E,Mangroves,0.55,0.3,-0.234,-0.128,dark (shadow?)
+20,16,1.4,2015,not yet,19.1745,72.88828,5.3,NW,Grassland,0.47,0.37,0.002,0.052,built-up or bare
+21,16,1.4,2023,yes,19.16893,72.88736,4.8,NW,Tree cover,0.47,0.37,-0.031,0.02,built-up or bare
+22,15,1.4,2026,not yet,19.16387,72.88343,4.6,NW,Tree cover,0.48,0.22,-0.126,-0.025,built-up or bare
+23,15,1.4,2020,yes,19.14892,72.94105,3.4,NE,Bare / sparse,0.51,0.32,-0.139,-0.051,built-up or bare
+24,15,1.4,2024,yes,19.14035,72.89758,1.8,NW,Tree cover,0.51,0.3,-0.132,-0.036,built-up or bare
+25,15,1.4,2024,yes,19.1394,72.93324,2.2,E,Tree cover,0.49,0.38,-0.106,-0.073,still partly green
+26,15,1.4,2017,yes,19.1267,72.92695,1.6,SE,Built-up,0.5,0.27,-0.11,-0.041,built-up or bare
+27,15,1.4,2025,not yet,19.12554,72.93449,2.4,E,Tree cover,0.63,0.37,-0.26,-0.09,still partly green
+28,15,1.4,2026,not yet,19.12585,72.95707,4.7,E,Mangroves,0.53,0.41,-0.299,-0.212,dark (shadow?)
+29,14,1.3,2026,not yet,19.17032,72.86666,6.4,NW,Tree cover,0.51,0.36,-0.038,0.048,built-up or bare
+30,14,1.3,2023,yes,19.13123,72.88427,3.1,W,Tree cover,0.56,0.19,-0.139,0.097,built-up or bare
+31,12,1.1,2021,yes,19.1771,72.95014,6.2,NE,Tree cover,0.51,0.26,-0.174,-0.068,dark (shadow?)
+32,12,1.1,2026,not yet,19.16724,72.91689,3.8,N,Tree cover,0.49,0.36,-0.116,-0.044,built-up or bare
+33,12,1.1,2024,yes,19.16363,72.95772,5.7,NE,Tree cover,0.56,0.33,-0.207,-0.101,still partly green
+34,12,1.1,2024,yes,19.14457,72.96152,5.2,E,Mangroves,0.48,0.37,-0.157,-0.127,still partly green
+35,12,1.1,2021,yes,19.13876,72.93835,2.7,E,Tree cover,0.52,0.27,-0.157,-0.047,built-up or bare
+36,12,1.1,2015,not yet,19.12182,72.86714,5.0,W,Bare / sparse,0.52,0.25,-0.173,-0.045,built-up or bare
+37,12,1.1,2023,yes,19.1108,72.93442,3.3,SE,Tree cover,0.46,0.35,-0.113,-0.067,still partly green
+38,9,0.8,2026,not yet,19.18062,72.95052,6.5,NE,Tree cover,0.49,0.39,-0.126,-0.083,still partly green
+39,9,0.8,2023,yes,19.17283,72.86135,7.0,NW,Tree cover,0.55,0.22,-0.152,0.007,built-up or bare
+40,9,0.8,2026,not yet,19.16363,72.88543,4.4,NW,Tree cover,0.53,0.24,-0.123,-0.021,built-up or bare
+41,9,0.8,2024,yes,19.16047,72.94136,4.2,NE,Tree cover,0.53,0.29,-0.154,-0.091,still partly green
+42,9,0.8,2017,yes,19.15567,72.94855,4.5,NE,Cropland,0.49,0.28,-0.164,-0.034,built-up or bare
+43,9,0.8,2022,yes,19.15227,72.88728,3.4,NW,Tree cover,0.62,0.21,-0.155,0.005,built-up or bare
+44,9,0.8,2020,yes,19.14523,72.86456,5.3,W,Bare / sparse,0.49,0.28,-0.069,-0.057,still partly green
+45,9,0.8,2026,not yet,19.13838,72.92909,1.8,E,Tree cover,0.44,0.31,-0.072,0.014,built-up or bare
+46,9,0.8,2023,yes,19.13317,72.90007,1.4,W,Tree cover,0.49,0.34,-0.161,-0.117,still partly green
+47,9,0.8,2025,not yet,19.13149,72.91919,0.7,E,Tree cover,0.55,0.35,-0.173,-0.042,still partly green

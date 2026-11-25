@@ -1,0 +1,57 @@
+--- Day 2: prepare ---
+valid area 87.9 % of the box | water 11.0 % | cloud in some year 1.2 %
+PIFs: 3284 dark (Vihar Lake), 704 bright (roofs) | forest control 4762 px
+shifts against 2018 : [(0, 0)] | lowest correlation 0.833
+forest NDVI vs day of January: -0.0026/day (r2 0.57) | scale factors 0.921 to 1.112
+rest of the box vs day of January: -0.0015/day (r2 0.38) before, +0.0002/day (r2 0.02) after scaling
+time of day: ['11:03', '11:04', '11:05'] IST | sun 41.6-44.7 deg, moves with the date (r2 0.97) | shadows 1.01-1.13 x building height, towards the north-west
+
+--- Day 3: vegetation maps ---
+threshold 0.430 (Otsu, 13 years pooled) | sparse/dense cut 0.584 | training areas alone would cut at 0.35 | each year alone 0.406-0.442
+vegetation 43.6-51.5 % of the 92.5 km2 land area (40.4-47.7 km2) | trend +0.299 km2/year (r2 0.24)
+8 rises, 4 falls | same direction at all 5 thresholds: 11 of 12
+area vs day of January: -0.273 %/day (r2 0.39) unscaled, -0.032 %/day (r2 0.02) scaled | vs sun height r2 0.03
+cleaning changes the area by -1.8 % (majority vote) and -10.7 % (opening + closing)
+2014-16 -> 2024-26: 2.88 km2 lost, 5.42 km2 gained
+mean yearly swing 2.91 km2, of which Tree cover 1.80, Mangroves 0.67, Grassland 0.10, Cropland 0.33, Built-up 0.32, Bare / sparse 0.01
+
+--- Day 4: changes ---
+each interval: 2.88 km2 lost and 3.30 km2 gained on average; 84 % of it did not last
+lasting loss 1.70 km2 in 2016-2024 (+1.26 not yet certain) | lasting gain 3.27 km2 (+5.32)
+loss patches of 3 x 3 pixels or more: 47, holding 31 % of the lasting loss | largest 7.6 ha, lost in 2026
+NDVI 2014 -> 2026: mean change +0.037, 2 sigma 0.202 -> 2.92 km2 significant drop, 2.07 km2 rise | in its own year, 47 % of the lasting loss was a significant drop and 20 % of the lasting gain a significant rise
+after the loss: built-up or bare 37 %, still partly green 55 %, dark (shadow?) 7 %, water 1 % | dark next to a new building (possible shadow): 42 pixels
+swings: the area moves with the whole-box NDVI shift in 12 of 12 intervals | r with area: city trees / forest +0.93, rain Jun-Sep +0.35, rain Oct-Dec +0.53, rain in the 90 days before +0.77
+vegetation (ha) 2014 -> 2026: Aarey Metro depot 27.5 -> 4.9, Kanjur landfill 9.8 -> 25.2, 300 m around the landfill 178.8 -> 181.9 | outlines: depot 28 ha, landfill 143 ha
+
+--- Day 5: accuracy ---
+WorldCover 2020 vs our January 2020 map, all pixels: 95821 | overall 87.5 %, producer's veg/none 81.8/96.0 %, user's veg/none 96.9/78.0 %, kappa 0.75
+WorldCover 2020 vs our January 2020 map, away from class edges: 45547 | overall 99.1 %, producer's veg/none 98.8/100.0 %, user's veg/none 100.0/97.1 %, kappa 0.979
+WorldCover 2021 vs our January 2021 map, all pixels: 96406 | overall 81.5 %, producer's veg/none 72.4/97.1 %, user's veg/none 97.7/67.4 %, kappa 0.637
+WorldCover 2021 vs our January 2021 map, away from class edges: 47053 | overall 93.3 %, producer's veg/none 91.2/100.0 %, user's veg/none 100.0/78.1 %, kappa 0.832
+Reference points 2014, counts: 91 | overall 85.7 %, producer's veg/none 83.7/88.1 %, user's veg/none 89.1/82.2 %, kappa 0.714
+Reference points 2014, weighted by map area: 91 | overall 85.4 %, producer's veg/none 80.6/90.1 %, user's veg/none 89.1/82.2 %, kappa 0.707
+Reference points 2026, counts: 95 | overall 94.7 %, producer's veg/none 92.0/97.8 %, user's veg/none 97.9/91.7 %, kappa 0.895
+Reference points 2026, weighted by map area: 95 | overall 94.8 %, producer's veg/none 92.4/97.6 %, user's veg/none 97.9/91.7 %, kappa 0.896
+kappa against WorldCover 2021 is highest at NDVI 0.34 (0.738); at our T = 0.43 it is 0.637
+WorldCover class -> % vegetation on our 2021 map: Tree cover 71.0, Grassland 25.0, Cropland 24.6, Built-up 3.0, Bare / sparse 0.2, Water 25.7, Wetland 100.0, Mangroves 77.5
+reference points 2014: 91 of 100 labelled (data/points_2014.csv); photos taken -613 to 730 days from the Landsat date
+reference points 2026: 95 of 100 labelled (data/points_2026.csv); photos taken -89 to -30 days from the Landsat date
+hotspot checks: 12 of 12 filled in (data/hotspot_checks.csv): partly 2, yes 10
+
+--- Day 5: principal components ---
+PCA of the 13 NDVI images: PC1 91.2 % (r with year -0.36, with area -0.09; mean score lost/gained/stable +0.04/+0.06/-0.01); PC2 2.6 % (r with year +0.98, with area +0.56; mean score lost/gained/stable -0.18/+0.10/-0.00); PC3 1.5 % (r with year +0.14, with area -0.08; mean score lost/gained/stable -0.07/+0.00/+0.00); PC4 1.0 % (r with year +0.01, with area -0.17; mean score lost/gained/stable +0.02/-0.01/+0.00)
+
+--- Day 5: second area ---
+airport box (285 x 225 px, land 48.1 km2): vegetation 19.1 % (2014) -> 19.2 % (2026), trend -0.12 km2/year (r2 0.07); 7 falls, 5 rises
+airport box lasting loss 2.41 km2 in 2016-2024 (+0.74 not yet certain), lasting gain 0.60 km2 | largest yearly loss 1.07 km2 in 2019 | open water 6.27 -> 5.98 km2 | area follows the main box: r = +0.34
+
+--- Day 7: image sizes and ground control points ---
+main box: 13 images, all 390 x 300 pixels of 30 m, 6 bands, corners (274845, 2122125) to (286545, 2113125) EPSG:32643, 105.3 km2 - identical: True | airport box: 13 images, 285 x 225 pixels, 57.7125 km2 - identical: True
+every photo of the same point or site covers the same ground (same corner, pixels and pixel size): True (212 points and sites)
+ground control points: 5 per image; largest shift 9.5 m (0.32 pixel) in the main box, 16.7 m (0.56 pixel) in the airport box - every point within one pixel: True | RMS error per image at most 7.0 m (main box), 8.0 m (airport box); lowest correlation 0.90
+photos: 2014: 1 size(s) 250 x 250 px of 0.6 m; 2026: 1 size(s) 250 x 250 px of 0.6 m; Aarey Metro depot: 1 size(s) 600 x 600 px of 2.6833 m; Kanjur landfill: 1 size(s) 600 x 600 px of 4.3667 m; Loss patch 1: 1 size(s) 600 x 600 px of 0.75 m; Loss patch 10: 1 size(s) 600 x 600 px of 0.75 m; Loss patch 2: 1 size(s) 600 x 600 px of 0.75 m; Loss patch 3: 1 size(s) 600 x 600 px of 0.75 m; Loss patch 4: 1 size(s) 600 x 600 px of 0.75 m; Loss patch 5: 1 size(s) 600 x 600 px of 0.75 m; Loss patch 6: 1 size(s) 600 x 600 px of 0.75 m; Loss patch 7: 1 size(s) 600 x 600 px of 0.75 m; Loss patch 8: 1 size(s) 600 x 600 px of 0.75 m; Loss patch 9: 1 size(s) 600 x 600 px of 0.75 m
+library calls in the three code files: 122 different calls, from Pillow, concurrent.futures, csv, json, matplotlib, numpy, queue, rasterio, subprocess, threading, tkinter, urllib, webbrowser (output/day7_library_calls.csv)
+photo series: 480 control-point matches, 160 found again; shift between photos of the same place: median 3.4 m, 90 % within 13.7 m
+
+all done in 70 s - figures and tables are in the output folder

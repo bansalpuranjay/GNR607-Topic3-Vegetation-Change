@@ -1,0 +1,56 @@
+--- Day 2: prepare ---
+valid area 93.6 % of the box | water 1.6 % | cloud in some year 5.1 %
+PIFs: 33 dark (Vihar Lake), 19 bright (roofs) | forest control 51196 px
+shifts against 2023 : [(0, 0)] | lowest correlation 0.508
+forest NDVI vs day of January: +0.0001/day (r2 0.16) | scale factors 0.924 to 1.074
+rest of the box vs day of January: +0.0000/day (r2 0.04) before, -0.0000/day (r2 0.10) after scaling
+time of day: ['10:41', '10:42'] IST | sun 48.1-50.2 deg, moves with the date (r2 0.02) | shadows 0.83-0.90 x building height, towards the north-west
+
+--- Day 3: vegetation maps ---
+threshold 0.538 (Otsu, 13 years pooled) | sparse/dense cut 0.679 | training areas alone would cut at 0.54 | each year alone 0.526-0.562
+vegetation 54.9-63.7 % of the 101.4 km2 land area (55.6-64.6 km2) | trend -0.295 km2/year (r2 0.22)
+6 rises, 6 falls | same direction at all 5 thresholds: 8 of 12
+area vs day of January: +0.019 %/day (r2 0.10) unscaled, +0.000 %/day (r2 0.00) scaled | vs sun height r2 0.07
+cleaning changes the area by +0.4 % (majority vote) and -12.4 % (opening + closing)
+2014-16 -> 2024-26: 8.80 km2 lost, 6.12 km2 gained
+mean yearly swing 2.80 km2, of which Tree cover 1.46, Mangroves 0.00, Grassland 0.25, Cropland 0.04, Built-up 1.16, Bare / sparse 0.05
+
+--- Day 4: changes ---
+each interval: 4.85 km2 lost and 4.45 km2 gained on average; 83 % of it did not last
+lasting loss 5.04 km2 in 2016-2024 (+7.51 not yet certain) | lasting gain 3.51 km2 (+2.88)
+loss patches of 3 x 3 pixels or more: 184, holding 31 % of the lasting loss | largest 46.8 ha, lost in 2020
+NDVI 2014 -> 2026: mean change -0.016, 2 sigma 0.278 -> 3.77 km2 significant drop, 1.99 km2 rise | in its own year, 32 % of the lasting loss was a significant drop and 15 % of the lasting gain a significant rise
+after the loss: built-up or bare 48 %, still partly green 51 %, dark (shadow?) 1 %, water 0 % | dark next to a new building (possible shadow): 51 pixels
+swings: the area moves with the whole-box NDVI shift in 9 of 12 intervals | r with area: city trees / forest +nan, rain Jun-Sep -0.06, rain Oct-Dec +0.18, rain in the 90 days before +0.34
+
+--- Day 5: accuracy ---
+WorldCover 2020 vs our January 2020 map, all pixels: 97335 | overall 83.4 %, producer's veg/none 81.3/87.1 %, user's veg/none 91.6/72.7 %, kappa 0.656
+WorldCover 2020 vs our January 2020 map, away from class edges: 26994 | overall 99.6 %, producer's veg/none 99.5/99.9 %, user's veg/none 100.0/98.4 %, kappa 0.989
+WorldCover 2021 vs our January 2021 map, all pixels: 95592 | overall 86.5 %, producer's veg/none 88.8/83.3 %, user's veg/none 87.9/84.5 %, kappa 0.723
+WorldCover 2021 vs our January 2021 map, away from class edges: 31453 | overall 99.7 %, producer's veg/none 99.7/99.6 %, user's veg/none 99.7/99.6 %, kappa 0.993
+Reference points 2014, counts: 68 | overall 76.5 %, producer's veg/none 72.7/83.3 %, user's veg/none 88.9/62.5 %, kappa 0.521
+Reference points 2014, weighted by map area: 68 | overall 78.2 %, producer's veg/none 77.8/79.2 %, user's veg/none 88.9/62.5 %, kappa 0.532
+Reference points 2026, counts: 77 | overall 89.6 %, producer's veg/none 87.5/93.1 %, user's veg/none 95.5/81.8 %, kappa 0.785
+Reference points 2026, weighted by map area: 77 | overall 89.3 %, producer's veg/none 86.5/93.7 %, user's veg/none 95.5/81.8 %, kappa 0.782
+kappa against WorldCover 2021 is highest at NDVI 0.54 (0.723); at our T = 0.54 it is 0.723
+WorldCover class -> % vegetation on our 2021 map: Tree cover 88.8, Grassland 86.5, Cropland 76.8, Built-up 17.0, Bare / sparse 0.7, Water 80.5, Wetland 96.4
+reference points 2014: 68 of 100 labelled (data/points_2014.csv); photos taken -1140 to 767 days from the Landsat date
+reference points 2026: 77 of 100 labelled (data/points_2026.csv); photos taken -32 to 1 days from the Landsat date
+hotspot checks: 10 of 10 filled in (data/hotspot_checks.csv): partly 1, yes 9
+
+--- Day 5: principal components ---
+PCA of the 13 NDVI images: PC1 82.6 % (r with year +0.16, with area -0.88; mean score lost/gained/stable -0.07/-0.03/+0.01); PC2 6.3 % (r with year +0.97, with area -0.45; mean score lost/gained/stable -0.14/+0.15/+0.01); PC3 2.3 % (r with year +0.09, with area -0.35; mean score lost/gained/stable -0.06/+0.00/+0.01); PC4 1.7 % (r with year +0.18, with area -0.17; mean score lost/gained/stable -0.03/+0.03/+0.00)
+
+--- Day 5: second area ---
+airport box (221 x 186 px, land 36.8 km2): vegetation 77.8 % (2014) -> 75.6 % (2026), trend -0.06 km2/year (r2 0.03); 6 falls, 6 rises
+airport box lasting loss 0.73 km2 in 2016-2024 (+3.10 not yet certain), lasting gain 0.69 km2 | largest yearly loss 2.74 km2 in 2026 | open water 0.24 -> 0.16 km2 | area follows the main box: r = +0.79
+
+--- Day 7: image sizes and ground control points ---
+main box: 13 images, all 405 x 297 pixels of 30 m, 6 bands, corners (642435, 1111275) to (654585, 1102365) EPSG:32643, 108.257 km2 - identical: True | airport box: 13 images, 221 x 186 pixels, 36.9954 km2 - identical: True
+every photo of the same point or site covers the same ground (same corner, pixels and pixel size): True (210 points and sites)
+ground control points: 5 per image; largest shift 10.0 m (0.33 pixel) in the main box, 7.5 m (0.25 pixel) in the airport box - every point within one pixel: True | RMS error per image at most 5.2 m (main box), 5.3 m (airport box); lowest correlation 0.86
+photos: 2014: 1 size(s) 250 x 250 px of 0.6 m; 2026: 1 size(s) 250 x 250 px of 0.6 m; Loss patch 1: 1 size(s) 600 x 600 px of 0.75 m; Loss patch 10: 1 size(s) 600 x 600 px of 0.75 m; Loss patch 2: 1 size(s) 600 x 600 px of 0.75 m; Loss patch 3: 1 size(s) 600 x 600 px of 0.75 m; Loss patch 4: 1 size(s) 600 x 600 px of 0.75 m; Loss patch 5: 1 size(s) 600 x 600 px of 0.75 m; Loss patch 6: 1 size(s) 600 x 600 px of 0.75 m; Loss patch 7: 1 size(s) 600 x 600 px of 0.75 m; Loss patch 8: 1 size(s) 600 x 600 px of 0.75 m; Loss patch 9: 1 size(s) 600 x 600 px of 0.75 m
+library calls in the three code files: 122 different calls, from Pillow, concurrent.futures, csv, json, matplotlib, numpy, queue, rasterio, subprocess, threading, tkinter, urllib, webbrowser (output/day7_library_calls.csv)
+photo series: 350 control-point matches, 97 found again; shift between photos of the same place: median 2.7 m, 90 % within 10.5 m
+
+all done in 53 s - figures and tables are in the output folder

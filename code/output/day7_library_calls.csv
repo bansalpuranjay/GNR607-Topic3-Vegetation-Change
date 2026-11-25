@@ -1,0 +1,123 @@
+library,call,times,where (file: line numbers)
+Pillow,Image.fromarray,1,download.py: 239
+Pillow,Image.open,2,app.py: 747; download.py: 214
+concurrent.futures,ThreadPoolExecutor,1,download.py: 259
+csv,csv.DictReader,16,"analysis.py: 400, 408, 1047, 1065, 1502, 1533, 1540, 1930; app.py: 41, 846; download.py: 164, 255, 294, 304, 306, 477"
+csv,csv.DictWriter,1,app.py: 853
+csv,csv.writer,6,"analysis.py: 422; download.py: 142, 156, 332, 576, 582"
+json,json.dumps,1,download.py: 66
+json,json.load,2,"download.py: 69, 153"
+json,json.loads,1,download.py: 202
+matplotlib,BoundaryNorm,1,app.py: 170
+matplotlib,Figure,1,app.py: 137
+matplotlib,FigureCanvasTkAgg,1,app.py: 138
+matplotlib,Line2D,13,"analysis.py: 905, 906, 907, 908, 909, 1238, 1282, 1283; app.py: 200, 201, 202, 203, 204"
+matplotlib,LineCollection,1,app.py: 900
+matplotlib,ListedColormap,2,"app.py: 169, 362"
+matplotlib,NavigationToolbar2Tk,1,app.py: 141
+matplotlib,Patch,23,"analysis.py: 802, 859, 878, 1210, 1233, 1234, 1235, 1236, 1237, 1267, 1700, 1805; app.py: 364, 511, 512, 513, 514, 565, 566, 567, 568, 569; download.py: 460"
+matplotlib,Rectangle,1,app.py: 816
+matplotlib,ScalarMappable,2,"app.py: 590, 969"
+matplotlib,matplotlib.colors.ListedColormap,1,analysis.py: 869
+matplotlib,matplotlib.colors.to_rgb,15,"analysis.py: 843, 844, 845, 846, 847, 1174, 1175, 1176, 1201, 1202, 1252, 1300, 1301, 1696, 1801"
+matplotlib,matplotlib.colors.to_rgba,1,analysis.py: 1774
+matplotlib,patheffects.withStroke,5,"analysis.py: 776, 779, 1261, 1896, 2175"
+matplotlib,plt.close,30,"analysis.py: 553, 582, 615, 658, 832, 865, 884, 916, 939, 976, 1215, 1244, 1289, 1323, 1356, 1388, 1441, 1717, 1741, 1783, 1831, 1905, 1956, 1984, 2161, 2198; download.py: 392, 407, 440, 472"
+matplotlib,plt.figure,4,"analysis.py: 1686, 1745, 1789, 2168"
+matplotlib,plt.imread,4,"analysis.py: 1887, 1945, 1971, 2026"
+matplotlib,plt.subplots,26,"analysis.py: 541, 557, 589, 619, 793, 840, 870, 888, 920, 943, 1195, 1219, 1248, 1293, 1327, 1362, 1392, 1721, 1875, 1936, 1959, 2137; download.py: 377, 397, 414, 462"
+matplotlib,to_rgb,7,"app.py: 506, 507, 562, 563, 616, 617; download.py: 457"
+numpy,np.abs,5,"analysis.py: 588, 708, 732, 754, 1770"
+numpy,np.arange,11,"analysis.py: 95, 384, 702, 791, 1220, 1311, 1474; app.py: 170, 485; download.py: 225, 226"
+numpy,np.arctan,1,download.py: 182
+numpy,np.arctan2,1,analysis.py: 185
+numpy,np.argmax,7,"analysis.py: 103, 289, 588, 1031, 1476, 1665, 1713"
+numpy,np.argmin,1,analysis.py: 704
+numpy,np.argsort,1,analysis.py: 382
+numpy,np.argwhere,3,"analysis.py: 125, 1259, 1837"
+numpy,np.array,71,"analysis.py: 90, 107, 172, 173, 307, 308, 339, 363, 364, 480, 481, 486, 487, 488, 489, 586, 587, 596, 620, 681, 685, 691, 889, 959, 984, 985, 992, 993, 994, 1044, 1045, 1049, 1050, 1051, 1271, 1413, 1509, 1509, 1511, 1512, 1593, 1641, 1642, 1643, 1645, 1814, 1843, 1845, 1845, 2026, 2095, 2142, 2143; app.py: 102, 103, 104, 179, 180, 232, 237, 237, 757, 758, 760, 761, 791, 791, 896, 896; download.py: 229, 229"
+numpy,np.asarray,4,"analysis.py: 328, 328; app.py: 748; download.py: 235"
+numpy,np.atleast_2d,2,"analysis.py: 1937, 1960"
+numpy,np.ceil,6,"analysis.py: 1874; app.py: 884, 885; download.py: 219, 503, 505"
+numpy,np.clip,4,"analysis.py: 89, 558, 1181; download.py: 370"
+numpy,np.concatenate,1,download.py: 374
+numpy,np.cos,3,"analysis.py: 1021; download.py: 176, 219"
+numpy,np.cumsum,1,analysis.py: 1273
+numpy,np.degrees,2,analysis.py: 185; download.py: 182
+numpy,np.diag,1,analysis.py: 333
+numpy,np.diff,6,"analysis.py: 677, 682, 708, 1639; app.py: 520, 520"
+numpy,np.dstack,4,"analysis.py: 560, 567, 1181; download.py: 370"
+numpy,np.empty_like,1,analysis.py: 466
+numpy,np.errstate,1,analysis.py: 232
+numpy,np.floor,4,"app.py: 409, 409; download.py: 502, 504"
+numpy,np.fmin,1,analysis.py: 250
+numpy,np.full,7,"analysis.py: 148, 148, 220, 281, 1458, 1598, 1614"
+numpy,np.full_like,1,analysis.py: 268
+numpy,np.hypot,3,"analysis.py: 1036, 2013, 2032"
+numpy,np.indices,4,"analysis.py: 174, 301, 1027; download.py: 448"
+numpy,np.isfinite,3,"analysis.py: 1433, 2133, 2166"
+numpy,np.linalg.eigh,1,analysis.py: 381
+numpy,np.linspace,2,analysis.py: 2140; app.py: 169
+numpy,np.log,1,download.py: 176
+numpy,np.log2,1,download.py: 219
+numpy,np.maximum,1,analysis.py: 233
+numpy,np.mean,7,"analysis.py: 1018, 1536, 1536, 2073; download.py: 426, 426, 458"
+numpy,np.median,10,"analysis.py: 480, 481, 699, 1044, 1045, 1057, 1058, 1059, 1060, 2097"
+numpy,np.meshgrid,1,download.py: 227
+numpy,np.nan_to_num,3,"analysis.py: 255, 255; app.py: 58"
+numpy,np.nanargmax,1,analysis.py: 272
+numpy,np.nanmax,2,"analysis.py: 267, 1434"
+numpy,np.nanmean,5,"analysis.py: 1038, 1038, 1039, 1039, 1602"
+numpy,np.nanpercentile,2,"analysis.py: 1770, 1771"
+numpy,np.nonzero,3,"analysis.py: 346, 1364; app.py: 227"
+numpy,np.ones,10,"analysis.py: 245, 246, 490, 686, 1412, 1645, 1692; app.py: 105, 182; download.py: 454"
+numpy,np.pad,2,analysis.py: 61; app.py: 221
+numpy,np.percentile,15,"analysis.py: 462, 558, 699, 699, 1008, 1012, 1013, 1334, 1361, 1788, 2097, 2134, 2167; app.py: 53; download.py: 374"
+numpy,np.ptp,3,"analysis.py: 1187, 1187; app.py: 185"
+numpy,np.radians,5,"analysis.py: 495, 1018; download.py: 176, 176, 219"
+numpy,np.random.default_rng,1,analysis.py: 343
+numpy,np.ravel,2,"analysis.py: 361, 361"
+numpy,np.reshape,2,"download.py: 451, 451"
+numpy,np.round,1,analysis.py: 1474
+numpy,np.shape,2,"analysis.py: 365, 365"
+numpy,np.sign,6,"analysis.py: 682, 682, 1054, 1054; app.py: 520, 520"
+numpy,np.sin,1,analysis.py: 1021
+numpy,np.sinh,1,download.py: 182
+numpy,np.sqrt,8,"analysis.py: 143, 166, 210, 233, 233, 241, 286, 2073"
+numpy,np.square,1,analysis.py: 2073
+numpy,np.stack,6,"analysis.py: 63, 401, 401, 415; app.py: 49; download.py: 115"
+numpy,np.tan,2,analysis.py: 495; download.py: 176
+numpy,np.trace,3,"analysis.py: 322; app.py: 768, 768"
+numpy,np.unravel_index,2,"analysis.py: 272, 289"
+numpy,np.where,19,"analysis.py: 57, 57, 252, 255, 329, 329, 545, 672, 796, 796, 1296, 1313, 1313, 1494, 1647; app.py: 358, 486, 609, 754"
+numpy,np.zeros,13,"analysis.py: 96, 111, 121, 175, 217, 313, 842, 997, 997, 997, 1173, 1773; download.py: 232"
+numpy,np.zeros_like,10,"analysis.py: 124, 157, 237, 237, 263, 457, 477, 1019, 1299; app.py: 615"
+queue,queue.Queue,1,app.py: 256
+rasterio,from_bounds,2,"download.py: 86, 129"
+rasterio,rasterio.Env,2,"download.py: 166, 536"
+rasterio,rasterio.open,16,"analysis.py: 305, 395, 414, 1991; app.py: 47, 63, 65, 67, 69, 90; download.py: 85, 116, 128, 132, 444, 479"
+rasterio,transform,22,"analysis.py: 171, 303, 356, 361, 1026, 1033, 1499, 1844, 1995, 2009; app.py: 213, 235, 422; download.py: 228, 240, 309, 313, 315, 343, 395, 449, 501"
+subprocess,subprocess.Popen,1,app.py: 1026
+threading,threading.Thread,1,app.py: 1031
+tkinter,ScrolledText,1,app.py: 1017
+tkinter,messagebox.askokcancel,1,app.py: 1075
+tkinter,messagebox.showerror,1,app.py: 857
+tkinter,tk.BooleanVar,1,app.py: 669
+tkinter,tk.DoubleVar,1,app.py: 440
+tkinter,tk.IntVar,3,"app.py: 321, 657, 928"
+tkinter,tk.Scale,3,"app.py: 322, 441, 929"
+tkinter,tk.StringVar,9,"app.py: 261, 325, 451, 535, 536, 543, 664, 684, 932"
+tkinter,tk.Text,1,app.py: 149
+tkinter,ttk.Button,10,"app.py: 448, 449, 663, 668, 676, 678, 688, 1008, 1011, 1012"
+tkinter,ttk.Checkbutton,1,app.py: 670
+tkinter,ttk.Combobox,4,"app.py: 452, 539, 665, 685"
+tkinter,ttk.Frame,14,"app.py: 282, 284, 287, 446, 533, 631, 634, 646, 648, 651, 655, 661, 673, 682"
+tkinter,ttk.Label,5,"app.py: 164, 262, 538, 672, 1013"
+tkinter,ttk.Notebook,1,app.py: 264
+tkinter,ttk.Radiobutton,4,"app.py: 327, 545, 659, 934"
+tkinter,ttk.Treeview,1,app.py: 639
+urllib,urllib.parse.quote,1,download.py: 150
+urllib,urllib.parse.urlencode,1,download.py: 198
+urllib,urllib.request.Request,3,"download.py: 67, 151, 188"
+urllib,urllib.request.urlopen,3,"download.py: 68, 152, 188"
+webbrowser,webbrowser.open,1,app.py: 866
